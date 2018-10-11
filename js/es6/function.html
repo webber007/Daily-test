@@ -1,4 +1,5 @@
 <script>
+/*
 function Point(x = 0, y = 0) {
   this.x = x;
   this.y = y;
@@ -7,4 +8,19 @@ function Point(x = 0, y = 0) {
 const p = new Point();
 
 console.log(p);
+*/
+
+function add(...values) {
+  let sum = 0;
+
+  for (var val of values) {
+    sum += val;
+  }
+
+  return sum;
+}
+
+add(2, 5, 3) // 10
+
+
 </script>
